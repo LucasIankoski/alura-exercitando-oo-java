@@ -17,7 +17,8 @@ public class TesteClasses {
 		System.out.println("SALDO CC: " + cc.getSaldo());
 		System.out.println("SALDO CP: " + cp.getSaldo());
 		
-		
+		cc.depositar(5000);
+		System.out.println("SALDO CC: " + cc.getSaldo());
 		
 
 	}
