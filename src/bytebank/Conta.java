@@ -1,7 +1,7 @@
 package bytebank;
 
-public class Conta {
-	private double saldo;
+public abstract class Conta {
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
@@ -15,11 +15,7 @@ public class Conta {
 		System.out.println("Bem-vindo ao Bytebank");
 	}
 	
-	public void depositar(double valor) {
-		
-		this.saldo += valor;
-		
-	}
+	public abstract void depositar(double valor);
 	
 	public boolean sacar(double valor) {
 		
