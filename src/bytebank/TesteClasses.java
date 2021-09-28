@@ -20,7 +20,10 @@ public class TesteClasses {
 		cc.depositar(5000);
 		System.out.println("SALDO CC: " + cc.getSaldo());
 		
-
+		CalculadorDeImposto ci = new CalculadorDeImposto();
+		ci.registraTributo(cc);
+		System.out.println(ci.getTotalImposto());
+		System.out.println("SALDO CC: " + cc.getSaldo());
 	}
 
 }

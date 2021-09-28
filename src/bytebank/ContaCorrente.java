@@ -1,6 +1,6 @@
 package bytebank;
 
-public class ContaCorrente extends Conta {
+public class ContaCorrente extends Conta implements Tributavel {
 	
 	ContaCorrente(int agencia, int numero){
 		super(agencia,  numero);
@@ -18,6 +18,12 @@ public class ContaCorrente extends Conta {
 	public void depositar(double valor) {
 		super.saldo += valor;
 		
+	}
+
+	@Override
+	public double getValorImposto() {
+		
+		return 30.00;
 	}
 
 }
